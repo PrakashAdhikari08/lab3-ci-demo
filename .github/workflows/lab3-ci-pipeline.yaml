@@ -25,7 +25,7 @@ jobs:
 
   build:
     run-on: ubuntu-latest
-    depends-on: test
+    needs: test
     steps:
     - name: Pretend to build
       run: echo Pretending to build
