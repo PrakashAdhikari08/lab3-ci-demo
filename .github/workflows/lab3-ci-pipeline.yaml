@@ -2,10 +2,10 @@ name: Lab 3 ci pipeline demo
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   test:
     runs-on: ubuntu-latest
