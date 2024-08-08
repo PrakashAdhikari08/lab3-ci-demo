@@ -22,3 +22,10 @@ jobs:
       with:
         name: my-artifact
         path: foo.txt
+
+  build:
+    run-on: ubuntu-latest
+    depends-on: test
+    steps:
+    - name: Pretend to build
+      run: echo Pretending to build
